@@ -28,13 +28,13 @@ final class ResultViewController: UIViewController {
     
     var calData: CalData? {
         didSet {
-//            temporaryNum = calData?.color
+            temporaryNum = calData?.color
         }
     }
     
     // ToDo 색깔 구분을 위해 임시적으로 숫자저장하는 변수
     // (나중에 어떤 색상이 선택되어 있는지 쉽게 파악하기 위해)
-//    var temporaryNum: Int64? = 1
+    var temporaryNum: Int64? = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,7 +50,7 @@ final class ResultViewController: UIViewController {
 
         updateButton.clipsToBounds = true
         updateButton.layer.cornerRadius = 8
-//        clearButtonColors()
+        clearButtonColors()
     }
     
     func configureUI() {
@@ -64,8 +64,8 @@ final class ResultViewController: UIViewController {
             mainTextView.textColor = .black
             updateButton.setTitle("UPDATE", for: .normal)
             mainTextView.becomeFirstResponder()
-//            let color = MyColor(rawValue: toDoData.color)
-//            setupColorTheme(color: color)
+            let color = MyColor(rawValue: calData.color)
+            setupColorTheme(color: color)
             
 //         기존데이터가 없을때
         } else {
@@ -73,9 +73,9 @@ final class ResultViewController: UIViewController {
 
             mainTextView.text = "텍스트를 여기에 입력하세요."
             mainTextView.textColor = .lightGray
-//            setupColorTheme(color: .red)
+            setupColorTheme(color: .red)
         }
-//        setupColorButton(num: temporaryNum ?? 1)
+        setupColorButton(num: temporaryNum ?? 1)
     }
 
     // 버튼 둥글게 깍기 위한 정확한 시점
@@ -88,62 +88,62 @@ final class ResultViewController: UIViewController {
         }
     }
 
-//    @IBAction func colorButtonTapped(_ sender: UIButton) {
-        // 임시숫자 저장
-//        self.temporaryNum = Int64(sender.tag)
+    @IBAction func colorButtonTapped(_ sender: UIButton) {
+//         임시숫자 저장
+        self.temporaryNum = Int64(sender.tag)
 
-//        let color = MyColor(rawValue: Int64(sender.tag))
-//        setupColorTheme(color: color)
+        let color = MyColor(rawValue: Int64(sender.tag))
+        setupColorTheme(color: color)
 
-//        clearButtonColors()
-//        setupColorButton(num: Int64(sender.tag))
-//    }
+        clearButtonColors()
+        setupColorButton(num: Int64(sender.tag))
+    }
     
-    // 텍스트뷰/저장(업데이트)버튼 색상 설정
-//    func setupColorTheme(color: MyColor? = .red) {
-//        backgroundView.backgroundColor = color?.backgoundColor
-//        saveButton.backgroundColor = color?.buttonColor
-//    }
+//     텍스트뷰/저장(업데이트)버튼 색상 설정
+    func setupColorTheme(color: MyColor? = .red) {
+        backgroundView.backgroundColor = color?.backgoundColor
+        updateButton.backgroundColor = color?.buttonColor
+    }
 
-    // 버튼 색상 새롭게 셋팅
-//    func clearButtonColors() {
-//        redButton.backgroundColor = MyColor.red.backgoundColor
-//        redButton.setTitleColor(MyColor.red.buttonColor, for: .normal)
-//        greenButton.backgroundColor = MyColor.green.backgoundColor
-//        greenButton.setTitleColor(MyColor.green.buttonColor, for: .normal)
-//        blueButton.backgroundColor = MyColor.blue.backgoundColor
-//        blueButton.setTitleColor(MyColor.blue.buttonColor, for: .normal)
-//        purpleButton.backgroundColor = MyColor.purple.backgoundColor
-//        purpleButton.setTitleColor(MyColor.purple.buttonColor, for: .normal)
-//    }
+//     버튼 색상 새롭게 셋팅
+    func clearButtonColors() {
+        livingButton.backgroundColor = MyColor.red.backgoundColor
+        livingButton.setTitleColor(MyColor.red.buttonColor, for: .normal)
+        investmentButton.backgroundColor = MyColor.green.backgoundColor
+        investmentButton.setTitleColor(MyColor.green.buttonColor, for: .normal)
+        freeMoneyButton.backgroundColor = MyColor.blue.backgoundColor
+        freeMoneyButton.setTitleColor(MyColor.blue.buttonColor, for: .normal)
+        emergencyButton.backgroundColor = MyColor.purple.backgoundColor
+        emergencyButton.setTitleColor(MyColor.purple.buttonColor, for: .normal)
+    }
 
-    // 눌려진 버튼 색상 설정
-//    func setupColorButton(num: Int64) {
-//        switch num {
-//        case 1:
-//            redButton.backgroundColor = MyColor.red.buttonColor
-//            redButton.setTitleColor(.white, for: .normal)
-//        case 2:
-//            greenButton.backgroundColor = MyColor.green.buttonColor
-//            greenButton.setTitleColor(.white, for: .normal)
-//        case 3:
-//            blueButton.backgroundColor = MyColor.blue.buttonColor
-//            blueButton.setTitleColor(.white, for: .normal)
-//        case 4:
-//            purpleButton.backgroundColor = MyColor.purple.buttonColor
-//            purpleButton.setTitleColor(.white, for: .normal)
-//        default:
-//            redButton.backgroundColor = MyColor.red.buttonColor
-//            redButton.setTitleColor(.white, for: .normal)
-//        }
-//    }
+//     눌려진 버튼 색상 설정
+    func setupColorButton(num: Int64) {
+        switch num {
+        case 1:
+            livingButton.backgroundColor = MyColor.red.buttonColor
+            livingButton.setTitleColor(.white, for: .normal)
+        case 2:
+            investmentButton.backgroundColor = MyColor.green.buttonColor
+            investmentButton.setTitleColor(.white, for: .normal)
+        case 3:
+            freeMoneyButton.backgroundColor = MyColor.blue.buttonColor
+            freeMoneyButton.setTitleColor(.white, for: .normal)
+        case 4:
+            emergencyButton.backgroundColor = MyColor.purple.buttonColor
+            emergencyButton.setTitleColor(.white, for: .normal)
+        default:
+            livingButton.backgroundColor = MyColor.red.buttonColor
+            livingButton.setTitleColor(.white, for: .normal)
+        }
+    }
 
     @IBAction func updateButtonTapped(_ sender: UIButton) {
         // 기존데이터가 있을때 ===> 기존 데이터 업데이트
         if let calData = self.calData {
             // 텍스트뷰에 저장되어 있는 메세지
             calData.callabel = mainTextView.text
-//            calData.color = temporaryNum ?? 1
+            calData.color = temporaryNum ?? 1
             calManager.updateResult(newCalResult: calData) {
                 print("업데이트 완료")
                 // 다시 전화면으로 돌아가기
@@ -153,7 +153,7 @@ final class ResultViewController: UIViewController {
         // 기존데이터가 없을때 ===> 새로운 데이터 생성
         } else {
             let callabel = mainTextView.text
-            calManager.saveCalData(calResultText: callabel){
+            calManager.saveCalData(calResultText: callabel, colorInt: temporaryNum ?? 1){
                 print("저장완료")
                 // 다시 전화면으로 돌아가기
                 self.navigationController?.popViewController(animated: true)

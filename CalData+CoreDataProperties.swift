@@ -2,7 +2,7 @@
 //  CalData+CoreDataProperties.swift
 //  
 //
-//  Created by 김찬교 on 2023/09/15.
+//  Created by 김찬교 on 2023/09/28.
 //
 //
 
@@ -16,10 +16,11 @@ extension CalData {
         return NSFetchRequest<CalData>(entityName: "CalData")
     }
 
-    @NSManaged public var callabel: String? // 저장 속성처럼 보이긴하나 계산 속성.
+    @NSManaged public var callabel: String?
     @NSManaged public var caltext: String?
     @NSManaged public var date: Date?
-
+    @NSManaged public var color: Int64
+    
     var dateString: String? {
         let myFormatter = DateFormatter()
         myFormatter.dateFormat = "yyyy-MM-dd"
@@ -32,3 +33,4 @@ extension CalData {
 extension CalData : Identifiable {
 
 }
+

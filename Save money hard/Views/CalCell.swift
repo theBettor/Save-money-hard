@@ -46,6 +46,9 @@ final class CalCell: UITableViewCell {
     func configureUIwithData() {
         calLabel.text = calData?.callabel
         dateTextLabel.text = calData?.dateString
+        guard let colorNum = calData?.color else { return }
+        let color = MyColor(rawValue: colorNum) ?? .red
+        backView.backgroundColor = color.backgoundColor
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

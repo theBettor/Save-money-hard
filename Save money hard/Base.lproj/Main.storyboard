@@ -128,18 +128,27 @@
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="재테크"/>
+                                        <connections>
+                                            <action selector="colorButtonTapped:" destination="D5B-wo-V0M" eventType="touchUpInside" id="Yjb-Wv-b40"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JAu-6L-zPr" userLabel="꽁돈">
                                         <rect key="frame" x="179" y="0.0" width="74.666666666666686" height="35"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="꽁돈"/>
+                                        <connections>
+                                            <action selector="colorButtonTapped:" destination="D5B-wo-V0M" eventType="touchUpInside" id="Hvd-au-jrS"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O3d-uC-WQK" userLabel="긴급 지출">
                                         <rect key="frame" x="268.66666666666669" y="0.0" width="74.333333333333314" height="35"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="긴급 지출"/>
+                                        <connections>
+                                            <action selector="colorButtonTapped:" destination="D5B-wo-V0M" eventType="touchUpInside" id="pdB-df-EKq"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
