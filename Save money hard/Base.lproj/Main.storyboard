@@ -122,6 +122,9 @@
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="생활비"/>
+                                        <connections>
+                                            <action selector="colorButtonTapped:" destination="D5B-wo-V0M" eventType="touchUpInside" id="ydC-04-gw4"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gC-ez-Ftu" userLabel="재테크">
                                         <rect key="frame" x="89.666666666666686" y="0.0" width="74.333333333333314" height="35"/>
@@ -129,7 +132,7 @@
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="재테크"/>
                                         <connections>
-                                            <action selector="colorButtonTapped:" destination="D5B-wo-V0M" eventType="touchUpInside" id="Yjb-Wv-b40"/>
+                                            <action selector="colorButtonTapped:" destination="D5B-wo-V0M" eventType="touchUpInside" id="yFD-Bx-1hR"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JAu-6L-zPr" userLabel="꽁돈">
@@ -138,7 +141,7 @@
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="꽁돈"/>
                                         <connections>
-                                            <action selector="colorButtonTapped:" destination="D5B-wo-V0M" eventType="touchUpInside" id="Hvd-au-jrS"/>
+                                            <action selector="colorButtonTapped:" destination="D5B-wo-V0M" eventType="touchUpInside" id="16Z-No-7qb"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O3d-uC-WQK" userLabel="긴급 지출">
@@ -147,7 +150,7 @@
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="긴급 지출"/>
                                         <connections>
-                                            <action selector="colorButtonTapped:" destination="D5B-wo-V0M" eventType="touchUpInside" id="pdB-df-EKq"/>
+                                            <action selector="colorButtonTapped:" destination="D5B-wo-V0M" eventType="touchUpInside" id="1au-Sz-11f"/>
                                         </connections>
                                     </button>
                                 </subviews>
