@@ -14,6 +14,7 @@
 		6E2FEBE92AC56CCC002B3046 /* CalData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2FEBE72AC56CCC002B3046 /* CalData+CoreDataClass.swift */; };
 		6E338D232AB9872000627CA3 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E338D222AB9872000627CA3 /* CoreDataManager.swift */; };
 		6E338D252AB9B30100627CA3 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E338D242AB9B30100627CA3 /* ResultViewController.swift */; };
+		6EA864232AD819FF0076178E /* MoneyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA864222AD819FF0076178E /* MoneyListViewController.swift */; };
 		6ECD3EA22AB1ABDB002BAF75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECD3EA12AB1ABDB002BAF75 /* AppDelegate.swift */; };
 		6ECD3EA42AB1ABDB002BAF75 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECD3EA32AB1ABDB002BAF75 /* SceneDelegate.swift */; };
 		6ECD3EA62AB1ABDB002BAF75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECD3EA52AB1ABDB002BAF75 /* ViewController.swift */; };
@@ -32,6 +33,7 @@
 		6E2FEBE72AC56CCC002B3046 /* CalData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CalData+CoreDataClass.swift"; path = "../../CalData+CoreDataClass.swift"; sourceTree = "<group>"; };
 		6E338D222AB9872000627CA3 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		6E338D242AB9B30100627CA3 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		6EA864222AD819FF0076178E /* MoneyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyListViewController.swift; sourceTree = "<group>"; };
 		6ECD3E9E2AB1ABDB002BAF75 /* Save money hard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Save money hard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ECD3EA12AB1ABDB002BAF75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6ECD3EA32AB1ABDB002BAF75 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,9 +66,43 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		6EA8641E2AD815E70076178E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				6ECD3EA72AB1ABDB002BAF75 /* Main.storyboard */,
+				6EA864222AD819FF0076178E /* MoneyListViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		6EA8641F2AD816240076178E /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		6EA864202AD816400076178E /* New account */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New account";
+			sourceTree = "<group>";
+		};
+		6EA864212AD8165A0076178E /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		6ECD3E952AB1ABDB002BAF75 = {
 			isa = PBXGroup;
 			children = (
+				6EA864212AD8165A0076178E /* Profile */,
+				6EA864202AD816400076178E /* New account */,
+				6EA8641F2AD816240076178E /* Detail */,
+				6EA8641E2AD815E70076178E /* Home */,
 				6ECD3EA02AB1ABDB002BAF75 /* Save money hard */,
 				6ECD3E9F2AB1ABDB002BAF75 /* Products */,
 			);
@@ -90,7 +126,6 @@
 				6ECD3EB92AB1C32B002BAF75 /* Views */,
 				6ECD3EBA2AB1C331002BAF75 /* Controllers */,
 				6ECD3EAD2AB1ABDD002BAF75 /* Assets.xcassets */,
-				6ECD3EA72AB1ABDB002BAF75 /* Main.storyboard */,
 				6ECD3EAF2AB1ABDD002BAF75 /* LaunchScreen.storyboard */,
 				6ECD3EB22AB1ABDD002BAF75 /* Info.plist */,
 				6ECD3EAA2AB1ABDB002BAF75 /* Save_money_hard.xcdatamodeld */,
@@ -198,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E2FEBE92AC56CCC002B3046 /* CalData+CoreDataClass.swift in Sources */,
+				6EA864232AD819FF0076178E /* MoneyListViewController.swift in Sources */,
 				6ECD3EAC2AB1ABDB002BAF75 /* Save_money_hard.xcdatamodeld in Sources */,
 				6ECD3ECB2AB45635002BAF75 /* Cal.swift in Sources */,
 				6ECD3EA62AB1ABDB002BAF75 /* ViewController.swift in Sources */,
