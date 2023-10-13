@@ -34,7 +34,7 @@
 		6E338D222AB9872000627CA3 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		6E338D242AB9B30100627CA3 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		6EA864222AD819FF0076178E /* MoneyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyListViewController.swift; sourceTree = "<group>"; };
-		6ECD3E9E2AB1ABDB002BAF75 /* Save money hard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Save money hard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ECD3E9E2AB1ABDB002BAF75 /* Savemoneyhard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Savemoneyhard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ECD3EA12AB1ABDB002BAF75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6ECD3EA32AB1ABDB002BAF75 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6ECD3EA52AB1ABDB002BAF75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 				6EA864202AD816400076178E /* New account */,
 				6EA8641F2AD816240076178E /* Detail */,
 				6EA8641E2AD815E70076178E /* Home */,
-				6ECD3EA02AB1ABDB002BAF75 /* Save money hard */,
+				6ECD3EA02AB1ABDB002BAF75 /* Savemoneyhard */,
 				6ECD3E9F2AB1ABDB002BAF75 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -111,12 +111,12 @@
 		6ECD3E9F2AB1ABDB002BAF75 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6ECD3E9E2AB1ABDB002BAF75 /* Save money hard.app */,
+				6ECD3E9E2AB1ABDB002BAF75 /* Savemoneyhard.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6ECD3EA02AB1ABDB002BAF75 /* Save money hard */ = {
+		6ECD3EA02AB1ABDB002BAF75 /* Savemoneyhard */ = {
 			isa = PBXGroup;
 			children = (
 				6ECD3EA12AB1ABDB002BAF75 /* AppDelegate.swift */,
@@ -131,7 +131,7 @@
 				6ECD3EAA2AB1ABDB002BAF75 /* Save_money_hard.xcdatamodeld */,
 				6ECD3ECA2AB45635002BAF75 /* Cal.swift */,
 			);
-			path = "Save money hard";
+			path = Savemoneyhard;
 			sourceTree = "<group>";
 		};
 		6ECD3EB82AB1C324002BAF75 /* Models */ = {
@@ -164,9 +164,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6ECD3E9D2AB1ABDB002BAF75 /* Save money hard */ = {
+		6ECD3E9D2AB1ABDB002BAF75 /* Savemoneyhard */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6ECD3EB52AB1ABDD002BAF75 /* Build configuration list for PBXNativeTarget "Save money hard" */;
+			buildConfigurationList = 6ECD3EB52AB1ABDD002BAF75 /* Build configuration list for PBXNativeTarget "Savemoneyhard" */;
 			buildPhases = (
 				6ECD3E9A2AB1ABDB002BAF75 /* Sources */,
 				6ECD3E9B2AB1ABDB002BAF75 /* Frameworks */,
@@ -176,9 +176,9 @@
 			);
 			dependencies = (
 			);
-			name = "Save money hard";
+			name = Savemoneyhard;
 			productName = "Save money hard";
-			productReference = 6ECD3E9E2AB1ABDB002BAF75 /* Save money hard.app */;
+			productReference = 6ECD3E9E2AB1ABDB002BAF75 /* Savemoneyhard.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -209,7 +209,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6ECD3E9D2AB1ABDB002BAF75 /* Save money hard */,
+				6ECD3E9D2AB1ABDB002BAF75 /* Savemoneyhard */,
 			);
 		};
 /* End PBXProject section */
@@ -393,7 +393,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4RM6V6QG3H;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Save money hard/Info.plist";
+				INFOPLIST_FILE = Savemoneyhard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -404,7 +404,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "theBettor.Save-money-hard";
+				PRODUCT_BUNDLE_IDENTIFIER = theBettor.Savemoneyhard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -424,7 +424,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4RM6V6QG3H;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Save money hard/Info.plist";
+				INFOPLIST_FILE = Savemoneyhard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -435,7 +435,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "theBettor.Save-money-hard";
+				PRODUCT_BUNDLE_IDENTIFIER = theBettor.Savemoneyhard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -458,7 +458,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6ECD3EB52AB1ABDD002BAF75 /* Build configuration list for PBXNativeTarget "Save money hard" */ = {
+		6ECD3EB52AB1ABDD002BAF75 /* Build configuration list for PBXNativeTarget "Savemoneyhard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6ECD3EB62AB1ABDD002BAF75 /* Debug */,
