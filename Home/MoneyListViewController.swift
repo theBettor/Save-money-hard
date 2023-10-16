@@ -149,7 +149,7 @@ class MoneyListViewController: UIViewController {
                 cell.configure(item: summary, vm: viewModel)
                 return cell
             } else {
-                return nil
+                return nil 
             }
             
         case .list:
