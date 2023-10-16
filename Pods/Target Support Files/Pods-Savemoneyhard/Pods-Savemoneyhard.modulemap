@@ -1,0 +1,6 @@
+framework module Pods_Savemoneyhard {
+  umbrella header "Pods-Savemoneyhard-umbrella.h"
+
+  export *
+  module * { export * }
+}
