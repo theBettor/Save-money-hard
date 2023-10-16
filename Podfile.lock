@@ -1,0 +1,34 @@
+PODS:
+  - DTZFloatingActionButton (0.4.0)
+  - MonthYearPicker (4.0.2)
+  - RxCocoa (6.6.0):
+    - RxRelay (= 6.6.0)
+    - RxSwift (= 6.6.0)
+  - RxRelay (6.6.0):
+    - RxSwift (= 6.6.0)
+  - RxSwift (6.6.0)
+
+DEPENDENCIES:
+  - DTZFloatingActionButton
+  - MonthYearPicker (~> 4.0.2)
+  - RxCocoa (= 6.6.0)
+  - RxSwift (= 6.6.0)
+
+SPEC REPOS:
+  trunk:
+    - DTZFloatingActionButton
+    - MonthYearPicker
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+
+SPEC CHECKSUMS:
+  DTZFloatingActionButton: 746febb29e47f9023089cb7bab15da2b1cbbf888
+  MonthYearPicker: 91f77106e6806d8c93c69e943ab0795fd420657f
+  RxCocoa: 44a80de90e25b739b5aeaae3c8c371a32e3343cc
+  RxRelay: 45eaa5db8ee4fb50e5ebd57deec0159e97fa51e6
+  RxSwift: a4b44f7d24599f674deebd1818eab82e58410632
+
+PODFILE CHECKSUM: 39aef71c96fc6791ca520af048d278171b80817d
+
+COCOAPODS: 1.12.1
