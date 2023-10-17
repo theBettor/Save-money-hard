@@ -6,9 +6,10 @@
 //
 
 import UIKit
+import DTZFloatingActionButton
 import RxSwift
 
-class MoneyListViewController: UIViewController {
+class HomeListViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -27,15 +28,14 @@ class MoneyListViewController: UIViewController {
         configureCollectionView()
         viewModel.getUid()
         bind()
-        addFloatingButton()
+//        addFloatingButton()
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        viewModel.loadFirebaseData(dateFilter: try! viewModel.dateFilter.value())
     }
     
     private func setupNavigationBar() {
-        navigationItem.title = "살림의 왕 🤓"
+        navigationItem.title = "돈을 싹싹 모아보자!"
         let backButton = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
         backButton.tintColor = UIColor(named: "SecondaryNavy")
         navigationItem.backBarButtonItem = backButton
@@ -49,8 +49,8 @@ class MoneyListViewController: UIViewController {
     }
     
     @objc func profileButtonTapped() {
-        let vc = ProfileViewController()
-        self.navigationController?.pushViewController(vc, animated: true)
+//        let vc = ProfileViewController()
+//        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     private func configureCollectionView() {
@@ -70,19 +70,19 @@ class MoneyListViewController: UIViewController {
         collectionView.delegate = self
     }
     
-    private func addFloatingButton() {
-        let actionButton = DTZFloatingActionButton()
-        actionButton.handler = {
-            button in
-            let sb = UIStoryboard(name: "NewAccountBook", bundle: nil)
-            let vc = sb.instantiateViewController(withIdentifier: "NewAccountBookViewController") as! NewAccountBookViewController
-            vc.vm.uid = try! self.viewModel.uid.value()
-            self.navigationController?.pushViewController(vc, animated: true)
-        }
-        actionButton.isScrollView = true
-        actionButton.buttonColor = UIColor(named: "PrimaryBlue")!
-        self.view.addSubview(actionButton)
-    }
+//    private func addFloatingButton() {
+//        let actionButton = DTZFloatingActionButton()
+//        actionButton.handler = {
+//            button in
+//            let sb = UIStoryboard(name: "NewAccountBook", bundle: nil)
+//            let vc = sb.instantiateViewController(withIdentifier: "NewAccountBookViewController") as! NewAccountBookViewController
+//            vc.vm.uid = try! self.viewModel.uid.value()
+//            self.navigationController?.pushViewController(vc, animated: true)
+//        }
+//        actionButton.isScrollView = true
+//        actionButton.buttonColor = UIColor(named: "PrimaryBlue")!
+//        self.view.addSubview(actionButton)
+//    }
     
     private func bind() {
         
@@ -97,7 +97,7 @@ class MoneyListViewController: UIViewController {
             .observe(on: MainScheduler.instance)
             .subscribe { [weak self] filter in
 //                print("---> new date filter: \(filter)")
-                self?.viewModel.loadFirebaseData(dateFilter: filter)
+//                self?.viewModel.loadFirebaseData(dateFilter: filter)
             }.disposed(by: bag)
         
         viewModel.summary

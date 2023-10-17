@@ -30,7 +30,8 @@
 		6E99D03D2ADD3F24006FC041 /* Pods_Savemoneyhard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E99D03C2ADD3F24006FC041 /* Pods_Savemoneyhard.framework */; };
 		6E99D03E2ADD3F24006FC041 /* Pods_Savemoneyhard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E99D03C2ADD3F24006FC041 /* Pods_Savemoneyhard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6E99D0422ADD4480006FC041 /* SummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E99D0412ADD4480006FC041 /* SummaryCell.swift */; };
-		6EA864232AD819FF0076178E /* MoneyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA864222AD819FF0076178E /* MoneyListViewController.swift */; };
+		6E99D0442ADE83F3006FC041 /* HomeListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E99D0432ADE83F3006FC041 /* HomeListCell.swift */; };
+		6EA864232AD819FF0076178E /* HomeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA864222AD819FF0076178E /* HomeListViewController.swift */; };
 		6ECD3EA22AB1ABDB002BAF75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECD3EA12AB1ABDB002BAF75 /* AppDelegate.swift */; };
 		6ECD3EA42AB1ABDB002BAF75 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECD3EA32AB1ABDB002BAF75 /* SceneDelegate.swift */; };
 		6ECD3EA62AB1ABDB002BAF75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECD3EA52AB1ABDB002BAF75 /* ViewController.swift */; };
@@ -75,7 +76,8 @@
 		6E99D0322ADD3F1F006FC041 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E99D03C2ADD3F24006FC041 /* Pods_Savemoneyhard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Savemoneyhard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E99D0412ADD4480006FC041 /* SummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryCell.swift; sourceTree = "<group>"; };
-		6EA864222AD819FF0076178E /* MoneyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyListViewController.swift; sourceTree = "<group>"; };
+		6E99D0432ADE83F3006FC041 /* HomeListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListCell.swift; sourceTree = "<group>"; };
+		6EA864222AD819FF0076178E /* HomeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListViewController.swift; sourceTree = "<group>"; };
 		6ECD3E9E2AB1ABDB002BAF75 /* Savemoneyhard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Savemoneyhard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ECD3EA12AB1ABDB002BAF75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6ECD3EA32AB1ABDB002BAF75 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,9 +134,10 @@
 			isa = PBXGroup;
 			children = (
 				6ECD3EA72AB1ABDB002BAF75 /* Main.storyboard */,
-				6EA864222AD819FF0076178E /* MoneyListViewController.swift */,
-				6E34DECC2ADD22B0005B09B6 /* HomeListViewModel.swift */,
+				6EA864222AD819FF0076178E /* HomeListViewController.swift */,
 				6E99D0412ADD4480006FC041 /* SummaryCell.swift */,
+				6E99D0432ADE83F3006FC041 /* HomeListCell.swift */,
+				6E34DECC2ADD22B0005B09B6 /* HomeListViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -163,14 +166,14 @@
 		6ECD3E952AB1ABDB002BAF75 = {
 			isa = PBXGroup;
 			children = (
-				6EA864212AD8165A0076178E /* Profile */,
-				6EA864202AD816400076178E /* New account */,
-				6EA8641F2AD816240076178E /* Detail */,
-				6EA8641E2AD815E70076178E /* Home */,
 				6ECD3EA02AB1ABDB002BAF75 /* Savemoneyhard */,
 				6ECD3E9F2AB1ABDB002BAF75 /* Products */,
 				C19FC4B3C0575B74022CBF41 /* Pods */,
+				6EA864212AD8165A0076178E /* Profile */,
 				46801291AA813B5391DB4F64 /* Frameworks */,
+				6EA864202AD816400076178E /* New account */,
+				6EA8641F2AD816240076178E /* Detail */,
+				6EA8641E2AD815E70076178E /* Home */,
 			);
 			sourceTree = "<group>";
 		};
@@ -357,7 +360,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E2FEBE92AC56CCC002B3046 /* CalData+CoreDataClass.swift in Sources */,
-				6EA864232AD819FF0076178E /* MoneyListViewController.swift in Sources */,
+				6EA864232AD819FF0076178E /* HomeListViewController.swift in Sources */,
+				6E99D0442ADE83F3006FC041 /* HomeListCell.swift in Sources */,
 				6ECD3EAC2AB1ABDB002BAF75 /* Save_money_hard.xcdatamodeld in Sources */,
 				6ECD3ECB2AB45635002BAF75 /* Cal.swift in Sources */,
 				6E99D0422ADD4480006FC041 /* SummaryCell.swift in Sources */,
